@@ -1,12 +1,193 @@
-h1 {
-    color: #187106;
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* Global styles */
+* {
+    /* Apply box-sizing to all elements for easier layout management */
+    box-sizing: border-box;
 }
 
-img {
+/* Body styles for background color, font, and text color */
+body {
+    background-color: #e0f7e9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+}
+
+/* Navigation bar styles for background color, layout, and sticky positioning */
+nav {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Style the site title in the navigation bar */
+nav h1 {
+    color: #187106;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* Style the navigation links container */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style navigation links */
+.nav-links a {
+    text-decoration: none;
+    color: #187106;
+    font-weight: bold;
+}
+
+/* Add hover effect to navigation links */
+.nav-links a:hover {
+    color: #0f4d04;
+    text-decoration: underline;
+}
+
+/* Section styles for padding and layout */
+section {
+    padding: 60px 8%;
+}
+
+/* Style section headings */
+section h2 {
+    color: #187106;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* About section styles for layout and spacing */
+#about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Styles for the image and text in the about section */
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+/* Style the image in the about section with max width, border radius, and block display */
+.about-image img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 16px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+}
+
+/* Style the text in the about section with font size and line height for readability */
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Styles for experience, skills, projects, and connect sections */
+#experience,
+#skills,
+#projects,
+#connect {
+    display: block;
+}
+
+/* Container for cards in experience and skills sections with flex layout and gap */
+.card-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Styles for individual cards with background color, border radius, padding, and box shadow */
+.card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Style the headings in the cards */
+.card h3 {
+    color: #187106;
+    margin-top: 0;
+}
+
+/* Style the lists in the cards with padding and spacing */
+.card ul {
+    padding-left: 20px;
+}
+
+/* Style the list items in the cards with margin and line height for readability */
+.card li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Style the paragraph in the projects section with background color, padding, border radius, and box shadow */
+#projects p {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Styles for the connect section with flex layout and gap */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styles for social media buttons with size, background color, text color, border radius, and hover effects */
+.social-button {
+    width: 55px;
+    height: 55px;
+    background-color: #187106;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Add hover effect to social media buttons for background color change and slight upward movement */
+.social-button:hover {
+    background-color: #0f4d04;
+    transform: translateY(-4px);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
 }

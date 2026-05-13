@@ -23,52 +23,141 @@
 </head>
 
 <body>
-    <h1>Miguel Alexander Nunez Palomares</h1>
+    <!-- Navigation bar with links to different sections of the website -->
+    <nav>
+        <h1>Miguel Alexander Nunez Palomares</h1>
 
-    <img src="images/me.jpg" alt="Miguel Alexander Nunez Palomares" width="400" height="300">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Mnunez1001" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
 
+    <!-- About section with an image and text describing me -->
     <section id="about">
-        <h2>About</h2>
-        <p>
-            I'm a person who loves learning, creating, and improving a little every day.
-            Whether I'm diving into math or working on personal projects, I'm always looking
-            for meaning and growth in what I do. I value hard work, curiosity, and the kind
-            of mindset that turns challenges into opportunities.
-        </p>
+        <div class="about-image">
+            <img src="images/me.jpg" alt="Miguel Alexander Nunez Palomares">
+        </div>
+
+        <div class="about-text">
+            <h2>About</h2>
+            <p>
+                I'm a person who loves learning, creating, and improving a little every day.
+                Whether I'm diving into math or working on personal projects, I'm always looking
+                for meaning and growth in what I do. I value hard work, curiosity, and the kind
+                of mindset that turns challenges into opportunities.
+            </p>
+        </div>
     </section>
 
+    <!-- Experience section with cards for educational background, classes taken, and leadership & programs -->
     <section id="experience">
         <h2>Experience</h2>
-        <ul>
-            <li>
-                <strong>Classes Taken</strong>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Educational Background</h3>
+                <ul>
+                    <li>B.S. in Computer Technology & Information Systems (in progress)</li>
+                    <li>B.S. in Mathematics (in progress)</li>
+                    <li>Minor in Accounting (in progress)</li>
+                    <li>Minor in Cyber Security (in progress)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Classes Taken</h3>
                 <ul>
                     <li>Fundamentals of Cyber Security</li>
                     <li>Operating Systems</li>
                     <li>Networking</li>
+                    <li>Database Systems</li>
+                    <li>Systems Analysis and Design</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Calculus 3</li>
+                    <li>Complex Analysis</li>
+                    <li>Data Structures & Algorithms</li>
                 </ul>
-            </li>
+            </div>
 
-            <li>
-                <strong>Projects</strong>
+            <div class="card">
+                <h3>Leadership & Programs</h3>
                 <ul>
-                    <li>Magic Mirror</li>
-                    <li>Loteria Game Java</li>
+                    <li>Golden Door Scholar</li>
+                    <li>NC SeaGrant Coastal Robotics Research</li>
+                    <li>Code the Dream - Data Engineering Pathway</li>
                 </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills section with cards for programming languages, technical skills, networking, and languages spoken -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML (in Progress)</li>
+                    <li>CSS (in Progress)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>YOLOv8</li>
+                    <li>OpenCV</li>
+                    <li>MySQL Workbench 8.0</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Networking</h3>
+                <ul>
+                    <li>CCNA - Intro to Networks Cisco Networking Academy Badge</li>
+                    <div class="about-image">
+                        <img src="images/badge.png" alt="CCNA Badge"> 
+                    </div>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section with cards for different projects I've worked on -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Project cards coming soon.</p>
+    </section>
+
+    <!-- Connect section with links to LinkedIn and GitHub profiles -->
     <section id="connect">
         <h2>Connect</h2>
-        <p>You can find me through the following links:</p>
 
-        <ul>
-            <!-- target opens the link in a new tab -->
-            <li><a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/Mnunez1001" target="_blank">GitHub</a></li>
-        </ul>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" class="social-button">in</a>
+            <a href="https://github.com/Mnunez1001" target="_blank" class="social-button">GH</a>
+        </div>
     </section>
+
 </body>
 
 </html>
