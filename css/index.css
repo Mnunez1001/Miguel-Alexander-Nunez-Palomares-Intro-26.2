@@ -190,4 +190,40 @@ section h2 {
     .card-container {
         flex-direction: column;
     }
+
+    #skills ul {
+    justify-content: center;
+}
+}
+
+/* Additional styles for the skills section to display skills as cards with flex layout and gap for now*/
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: white;
+    color: #187106;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer styles for background color, text color, padding, and text alignment */
+
+footer {
+    background-color: #f0f0f0;
+    color: #187106;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
 }
