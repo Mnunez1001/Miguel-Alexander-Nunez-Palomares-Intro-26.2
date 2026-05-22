@@ -21,7 +21,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
-// New footer element
+// New footer element////////////////////////////////////////////////////////////////////////////////////////////////
 const footer = document.createElement("footer");
 
 // New paragraph element for the copyright
