@@ -38,7 +38,7 @@ copyright.innerHTML = `Miguel Alexander Nunez Palomares © ${thisYear}`;
 footer.appendChild(copyright);
 
 // footer appended to the body of the document
-document.body.appendChild(footer);
+//document.body.appendChild(footer);
 
 
 // New message form code////////////////////////////////////////////////////////////////////////////////////////////////
