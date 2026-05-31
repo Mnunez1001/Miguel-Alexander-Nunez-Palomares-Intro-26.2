@@ -192,8 +192,18 @@ section h2 {
     }
 
     #skills ul {
-    justify-content: center;
-}
+        justify-content: center;
+    }
+
+    #leave-message form {
+        max-width: 100%;
+    }
+
+    #leave-message input,
+    #leave-message textarea,
+    #leave-message button {
+        font-size: 1rem;
+    }
 }
 
 /* Additional styles for the skills section to display skills as cards with flex layout and gap for now*/
@@ -226,4 +236,71 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Style for the Leave a Message section and Messages container */
+#leave-message form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    max-width: 600px;
+}
+
+#leave-message label {
+    display: block;
+    color: #187106;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#leave-message input,
+#leave-message textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#leave-message textarea {
+    min-height: 120px;
+}
+
+#leave-message button,
+#messages button {
+    background-color: #187106;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#leave-message button:hover,
+#messages button:hover {
+    background-color: #0f4d04;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#messages li {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#messages span {
+    display: block;
+    margin: 10px 0;
 }
