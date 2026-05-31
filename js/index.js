@@ -77,3 +77,22 @@ messageForm.addEventListener("submit", function (event) {
 
     messageForm.reset();
 });
+
+// GitHub repositories section/////////////////////////////////////////////////////////////////////////////////////////////////
+fetch("https://api.github.com/users/Mnunez1001/repos")
+    .then(response => response.json())
+    .then(repositories => {
+        console.log(repositories);
+
+        const projectSection = document.getElementById("projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(function (error) {
+        console.log("An error occurred:", error);
+    });

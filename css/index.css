@@ -204,6 +204,10 @@ section h2 {
     #leave-message button {
         font-size: 1rem;
     }
+
+    #projects ul {
+    justify-content: center;
+}
 }
 
 /* Additional styles for the skills section to display skills as cards with flex layout and gap for now*/
@@ -303,4 +307,22 @@ footer p {
 #messages span {
     display: block;
     margin: 10px 0;
+}
+
+/* Project section style */
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    background-color: white;
+    color: #187106;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
