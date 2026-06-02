@@ -95,4 +95,9 @@ fetch("https://api.github.com/users/Mnunez1001/repos")
     })
     .catch(function (error) {
         console.log("An error occurred:", error);
+        const projectSection = document.getElementById("projects");
+        const projectList = projectSection.querySelector("ul");
+        const errorMessage = document.createElement("li");
+        errorMessage.innerText = "Unable to load GitHub repositories. Please try again later.";
+        projectList.appendChild(errorMessage);
     });
