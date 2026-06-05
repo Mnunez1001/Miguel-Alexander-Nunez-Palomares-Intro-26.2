@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0f7e9;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+}
+
+nav {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h1 {
+    color: #187106;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #187106;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+section h2,
+section h3 {
+    color: #187106;
+}
+
+.api-card,
+#forecast-list li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+#forecast-list {
+    list-style: none;
+    padding: 0;
+}
+
+#forecast-list li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-area {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.search-area input {
+    padding: 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.search-area button {
+    background-color: #187106;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+    justify-content: center;
+    gap: 35px;
+}
+
+.gif-grid img {
+    width: 220px;
+    height: 220px;
+}
+
+#search-gifs {
+    margin-bottom: 60px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-button {
+    width: 55px;
+    height: 55px;
+    background-color: #187106;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #187106;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    #forecast-list li {
+        flex-direction: column;
+    }
+}

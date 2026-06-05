@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define the character set used -->
+    <meta charset="UTF-8">
+
+    <!-- Setting the viewport to make your website look good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Alex Nunez Palomares Portfolio</title>
+
+    <!-- Meta description for the website -->
+    <meta name="description"
+        content="Alex Nunez Palomares portfolio showcasing projects and skills in web development, design, and more.">
+
+    <!-- Meta author for the website -->
+    <meta name="author" content="Miguel Alexander Nunez Palomares">
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="css/api.css">
+</head>
+
+<body>
+    <!-- Navigation bar with links to different sections of the website -->
+    <nav>
+        <h1>Miguel Alexander Nunez Palomares</h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#giphy">GIPHY</a></li>
+            <li><a href="#connect">Connect</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Weather API section -->
+    <section id="weather">
+        <h2>Weather API</h2>
+        <p>Weather information retrieved using your current location.</p>
+
+        <div id="current-weather" class="api-card"></div>
+
+        <h3>Daily Forecast</h3>
+        <ul id="forecast-list"></ul>
+    </section>
+
+    <!-- GIPHY API section -->
+    <section id="giphy">
+        <h2>GIPHY API</h2>
+
+        <div class="search-area">
+            <input type="text" id="gif-search-input" placeholder="Search for a GIF">
+            <button id="gif-search-button" type="button">Search</button>
+        </div>
+
+        <h3>Search Results</h3>
+        <div id="search-gifs" class="gif-grid"></div>
+
+        <h3>Trending GIFs</h3>
+        <div id="trending-gifs" class="gif-grid"></div>
+    </section>
+
+    <!-- Connect section with links to LinkedIn and GitHub profiles -->
+    <section id="connect">
+        <h2>Connect</h2>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" class="social-button">in</a>
+            <a href="https://github.com/Mnunez1001" target="_blank" class="social-button">GH</a>
+        </div>
+    </section>
+
+
+    <!-- Footer section for any additional information or links -->
+    <footer id="footer">
+
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+
+</html>
