@@ -9,6 +9,11 @@ body {
     color: #1f2937;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
 nav {
     background-color: #f0f0f0;
     display: flex;
@@ -201,6 +206,10 @@ nav h1 {
 
     .project-image {
         min-height: 220px;
+    }
+
+    html {
+        scroll-padding-top: 180px;
     }
 }
 

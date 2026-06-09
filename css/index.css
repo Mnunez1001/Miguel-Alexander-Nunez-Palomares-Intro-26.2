@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
 /* Body styles for background color, font, and text color */
 body {
     background-color: #e0f7e9;
@@ -679,6 +684,10 @@ section h2 {
     .github-stats {
         grid-template-columns: 1fr;
     }
+
+    html {
+        scroll-padding-top: 180px;
+    }
 }
 
 /* Additional styles for the skills section to display skills as cards with flex layout and gap for now*/
@@ -864,7 +873,7 @@ footer {
 .project-showcase,
 .contact-info,
 .contact-form-card,
-.section-intro{
+.section-intro {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -887,7 +896,7 @@ footer {
 .contact-form-card button,
 .email-copy button,
 .back-to-top,
-.projects-action{
+.projects-action {
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
