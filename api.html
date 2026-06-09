@@ -5,11 +5,11 @@
     <!-- Define the character set used -->
     <meta charset="UTF-8">
 
-    <!-- Setting the viewport to make your website look good on all devices -->
+    <!-- Setting the viewport to make the website look good on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the webpage -->
-    <title>Alex Nunez Palomares Portfolio</title>
+    <title>API Showcase | Miguel Alexander Nunez Palomares</title>
 
     <!-- Meta description for the website -->
     <meta name="description"
@@ -20,26 +20,46 @@
 
     <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="css/api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon Browser Tab Icon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Open Graph meta tags for better sharing on social media -->
+    <meta property="og:title" content="Alex Nunez Palomares Portfolio">
+    <meta property="og:description"
+        content="Alex Nunez Palomares portfolio showcasing projects and skills in web development, design, and more.">
+    <meta property="og:image" content="images/portfolioWeb.png">
 </head>
 
 <body>
     <!-- Navigation bar with links to different sections of the website -->
     <nav>
-        <h1>Miguel Alexander Nunez Palomares</h1>
+        <h1>Alex Nunez Palomares</h1>
 
         <ul class="nav-links">
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="#weather">Weather</a></li>
             <li><a href="#giphy">GIPHY</a></li>
+            <li><a href="projects.html" class="nav-button">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
 
         </ul>
+
+        <button id="dark-mode-toggle" class="dark-mode-toggle" type="button">
+            🌙 Dark Mode
+        </button>
     </nav>
 
     <!-- Weather API section -->
     <section id="weather">
-        <h2>Weather API</h2>
-        <p>Weather information retrieved using your current location.</p>
+        <h2>Weather Dashboard</h2>
+        <p>Use the buttons below to retrieve weather information based on your current location.</p>
+
+        <div class="api-buttons">
+            <button id="current-weather-button" type="button">Current Weather</button>
+            <button id="forecast-button" type="button">7-Day Forecast</button>
+        </div>
 
         <div id="current-weather" class="api-card"></div>
 
@@ -64,18 +84,99 @@
     </section>
 
     <!-- Connect section with links to LinkedIn and GitHub profiles -->
-    <section id="connect">
-        <h2>Connect</h2>
+    <section id="connect" class="contact-section">
+        <h2>Connect With Me</h2>
+        <div class="contact-info">
+            <p class="eyebrow">Get In Touch</p>
+            <p>
+                I am always open to connecting about software development, data projects,
+                cybersecurity, research opportunities, internships, and collaborative projects.
+            </p>
 
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" class="social-button">in</a>
-            <a href="https://github.com/Mnunez1001" target="_blank" class="social-button">GH</a>
+            <div class="social-links">
+                <!-- LinkedIn icon link (opens in new tab) -->
+                <a href="https://www.linkedin.com/in/alex-nunezpalomares/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76
+                                2.24 5 5 5h14c2.76 0 5-2.24
+                                5-5v-14c0-2.76-2.24-5-5-5zm-11
+                                19h-3v-10h3v10zm-1.5-11.268c-.966
+                                0-1.75-.79-1.75-1.764s.784-1.764
+                                1.75-1.764 1.75.79 1.75 1.764
+                                -.784 1.764-1.75 1.764zm13.5
+                                11.268h-3v-5.604c0-1.336-.027-3.056-1.862-3.056-1.862
+                                0-2.146 1.454-2.146 2.957v5.703h-3v-10h2.881v1.367h.041c.401-.76
+                                1.379-1.562 2.84-1.562 3.037 0 3.598 2.001 3.598
+                                4.604v5.591z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/Mnunez1001" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <!-- icon; aria-hidden so SRs use the link label -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.205 11.366.6.112.82-.261.82-.58
+                                0-.287-.011-1.244-.017-2.254-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
+                                -1.089-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304
+                                 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.93
+                                0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.527.117-3.182 0 0 1.008-.322
+                                3.301 1.23a11.5 11.5 0 0 1 6.002 0c2.291-1.552 3.298-1.23 3.298-1.23
+                                .655 1.655.243 2.879.119 3.182.77.84 1.235 1.911 1.235 3.221
+                                0 4.61-2.807 5.624-5.479 5.921.43.371.823 1.102.823 2.222
+                                0 1.604-.014 2.896-.014 3.286 0 .321.218.694.825.577C20.565 22.267
+                                24 17.789 24 12.5 24 5.87 18.627.5 12 .5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="email-copy">
+                <span id="email-text">alexpalomares1001@gmail.com</span>
+                <button type="button" id="copy-email-button">Copy Email</button>
+            </div>
         </div>
     </section>
 
-
     <!-- Footer section for any additional information or links -->
     <footer id="footer">
+
+        <div class="footer-content">
+
+            <h3>Miguel Alexander Nunez Palomares</h3>
+
+            <p class="footer-title">
+                Computer Technology & Information Systems Student |
+                Mathematics Student |
+                Cybersecurity Minor
+            </p>
+
+            <p class="footer-email">
+                📧 alexpalomares1001@gmail.com
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/Mnunez1001" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+            <p class="footer-message">
+                Building software, data, and cybersecurity solutions while
+                continuously learning and growing as a developer.
+            </p>
+
+            <a href="#weather" class="back-to-top">
+                ↑ Back to Top
+            </a>
+
+        </div>
 
     </footer>
 
