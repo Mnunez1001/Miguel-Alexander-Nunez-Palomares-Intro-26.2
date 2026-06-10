@@ -71,94 +71,121 @@ nav h1 {
     background-color: #0f4d04;
 }
 
-section {
-    padding: 45px 8%;
+.projects-hero {
+    padding: 10px 8% 40px;
 }
 
-section h2,
-section h3 {
+.eyebrow {
     color: #187106;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.api-card,
-#forecast-list li {
+.projects-hero h2 {
+    color: #187106;
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.projects-hero p {
+    max-width: 800px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.projects-page {
+    padding: 20px 8% 80px;
+}
+
+.project-showcase {
     background-color: white;
-    padding: 20px;
-    border-radius: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: grid;
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 35px;
+    padding: 30px;
+    border-radius: 24px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-#forecast-list {
-    list-style: none;
-    padding: 0;
+.project-image {
+    background-color: #f0f0f0;
+    border-radius: 18px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 18px;
 }
 
-#forecast-list li {
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.project-image-cover img {
+    object-fit: cover;
+}
+
+.project-date {
+    color: #187106;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.project-content h3 {
+    color: #187106;
+    font-size: 1.8rem;
+    margin: 8px 0 15px;
+}
+
+.project-content h4 {
+    color: #187106;
+    margin-bottom: 5px;
+}
+
+.project-content p {
+    line-height: 1.6;
+}
+
+.project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
+    margin: 15px 0;
 }
 
-.search-area {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.search-area input {
-    padding: 12px;
-    border: 2px solid #d1d5db;
-    border-radius: 10px;
-    font-size: 1rem;
-    flex: 1;
-}
-
-.search-area button {
-    background-color: #187106;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 10px;
+.project-tags span {
+    background-color: #e0f7e9;
+    color: #187106;
+    padding: 10px 14px;
+    border-radius: 999px;
     font-weight: bold;
-    cursor: pointer;
 }
 
-.gif-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
-    justify-content: center;
-    gap: 35px;
+.achievement {
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-left: 5px solid #187106;
+    border-radius: 12px;
 }
 
-.gif-grid img {
-    width: 220px;
-    height: 220px;
-}
-
-#search-gifs {
-    margin-bottom: 60px;
-}
-
-.social-links {
-    display: flex;
-    gap: 20px;
-}
-
-.social-button {
-    width: 55px;
-    height: 55px;
+.project-links a {
+    display: inline-block;
     background-color: #187106;
     color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 12px 18px;
+    border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     nav {
         flex-direction: column;
         gap: 15px;
@@ -169,12 +196,16 @@ section h3 {
         justify-content: center;
     }
 
-    .search-area {
-        flex-direction: column;
+    .projects-hero h2 {
+        font-size: 2.5rem;
     }
 
-    #forecast-list li {
-        flex-direction: column;
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        min-height: 220px;
     }
 
     html {
@@ -182,30 +213,64 @@ section h3 {
     }
 }
 
-.api-buttons {
-    display: flex;
-    gap: 15px;
-    margin: 25px 0;
-    flex-wrap: wrap;
+/* Additional hover effects for interactivity and visual feedback */
+.card,
+.skill-card,
+.project-card,
+.program-card,
+.stat-card,
+.project-showcase,
+.contact-info,
+.contact-form-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.api-buttons button {
-    background-color: #187106;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 999px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+.card:hover,
+.skill-card:hover,
+.project-card:hover,
+.program-card:hover,
+.stat-card:hover,
+.project-showcase:hover,
+.contact-info:hover,
+.contact-form-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
-.api-buttons button:hover {
-    background-color: #0f4d04;
+.primary-button,
+.secondary-button,
+.project-links a,
+.contact-form-card button,
+.email-copy button,
+.back-to-top {
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.project-links a:hover,
+.contact-form-card button:hover,
+.email-copy button:hover,
+.back-to-top:hover {
     transform: translateY(-3px);
 }
 
-/* Dark mode styles */
+/* Additional hover effect for images in project cards and hero sections */
+.project-card img,
+.program-card img,
+.hero-image img,
+.project-image img {
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover img,
+.program-card:hover img,
+.hero-image:hover img,
+.project-showcase:hover .project-image img {
+    transform: scale(1.03);
+}
+
+/*Dark mode styles for projects page */
 .dark-mode-toggle {
     background-color: #187106;
     color: white;
@@ -233,31 +298,30 @@ section h3 {
 
 .dark-mode nav h1,
 .dark-mode .nav-links a,
-.dark-mode section h2,
-.dark-mode section h3,
-.dark-mode footer {
+.dark-mode .projects-hero h2,
+.dark-mode .project-content h3,
+.dark-mode .project-content h4,
+.dark-mode .project-date {
     color: #86efac;
 }
 
-.dark-mode .api-card,
-.dark-mode #forecast-list li {
+.dark-mode .project-showcase {
     background-color: #1f2937;
     color: #f9fafb;
 }
 
-.dark-mode input {
-    background-color: #111827;
-    color: #f9fafb;
-    border-color: #4b5563;
+.dark-mode .project-image,
+.dark-mode .achievement {
+    background-color: #374151;
 }
 
-.dark-mode .gif-grid img {
-    background-color: #1f2937;
+.dark-mode .project-tags span {
+    background-color: #374151;
+    color: #86efac;
 }
 
-.dark-mode .social-button,
-.dark-mode .api-buttons button,
-.dark-mode .search-area button,
+.dark-mode .project-links a,
+.dark-mode .nav-button,
 .dark-mode .dark-mode-toggle {
     background-color: #16a34a;
 }
@@ -318,157 +382,18 @@ section h3 {
     border-color: #4b5563;
 }
 
-/* Styles for the connect and leave a message section  */
-.contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    align-items: start;
-}
-
-.contact-info,
-.contact-form-card {
-    background-color: white;
-    padding: 35px;
-    border-radius: 24px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.contact-info h2 {
-    margin-top: 0;
-}
-
-.contact-info p {
-    line-height: 1.7;
-}
-
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-top: 25px;
-}
-
-.social-card {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    text-decoration: none;
-    background-color: #e0f7e9;
-    padding: 18px;
-    border-radius: 18px;
-    color: #1f2937;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.social-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
-}
-
-.social-card span {
-    width: 55px;
-    height: 55px;
-    background-color: #187106;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.social-card strong {
-    color: #187106;
-}
-
-.social-card p {
-    margin: 4px 0 0;
-}
-
-
-.contact-section {
-    display: block;
-}
-
-.contact-info {
-    background-color: white;
-    padding: 30px 35px;
-    border-radius: 24px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    max-width: 900px;
-    margin-bottom: 35px;
-}
-
-.contact-info p {
-    line-height: 1.7;
-    margin-bottom: 24px;
-}
-
-.social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-    margin: 20px 0 28px;
-}
-
-.social-links a {
-    color: #187106;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-.social-links a:hover {
-    transform: translateY(-4px);
-}
-
-.social-links svg {
-    width: 48px;
-    height: 48px;
-}
-
-.email-copy {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.email-copy span {
-    background-color: #f0f0f0;
-    color: #187106;
-    font-weight: bold;
-    padding: 14px 18px;
-    border-radius: 14px;
-}
-
-.email-copy button {
-    background-color: #187106;
-    color: white;
-    border: none;
-    padding: 14px 18px;
-    border-radius: 999px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.email-copy button:hover {
-    background-color: #0f4d04;
-}
-
 
 /* Footer styles for background color, text color, padding, and text alignment */
 
 footer {
-    width: 100%;
     background-color: #f0f0f0;
-    padding: 60px 8%;
+    padding: 50px 8%;
+    margin-top: 80px;
 }
 
 .footer-content {
     text-align: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 

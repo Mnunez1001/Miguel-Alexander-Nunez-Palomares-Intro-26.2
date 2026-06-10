@@ -5,11 +5,11 @@
     <!-- Define the character set used -->
     <meta charset="UTF-8">
 
-    <!-- Setting the viewport to make your website look good on all devices -->
+    <!-- Setting the viewport to make the website look good on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the webpage -->
-    <title>Alex Nunez Palomares Portfolio</title>
+    <title>Miguel Alexander Nunez Palomares | Portfolio</title>
 
     <!-- Meta description for the website -->
     <meta name="description"
@@ -20,60 +20,112 @@
 
     <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Favicon Browser Tab Icon -->
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- Open Graph meta tags for better sharing on social media -->
+    <meta property="og:title" content="Alex Nunez Palomares Portfolio">
+    <meta property="og:description"
+        content="Alex Nunez Palomares portfolio showcasing projects and skills in web development, design, and more.">
+    <meta property="og:image" content="images/portfolioWeb.png">
 </head>
 
 <body>
     <!-- Navigation bar with links to different sections of the website -->
     <nav>
-        <h1>Miguel Alexander Nunez Palomares</h1>
+        <h1>Alex Nunez Palomares</h1>
 
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Education, Research, and Leadership</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Projects Preview</a></li>
+            <li><a href="projects.html" class="nav-button">Projects</a></li>
             <li><a href="#connect">Connect</a></li>
-            <li><a href="#leave-message">Leave a Message</a></li>
-            <li><a href="api.html">Open API Page</a></li>
+            <li><a href="api.html">API Demo</a></li>
         </ul>
+
+        <button id="dark-mode-toggle" class="dark-mode-toggle" type="button">
+            🌙 Dark Mode
+        </button>
     </nav>
 
     <!-- About section with an image and text describing me -->
-    <section id="about">
-        <div class="about-image">
-            <img src="images/me.jpg" alt="Miguel Alexander Nunez Palomares">
+    <section id="about" class="hero">
+        <div class="hero-text">
+            <p class="eyebrow">Portfolio Website</p>
+
+            <h2>Miguel Alexander Nunez Palomares</h2>
+
+            <h3>
+                CTIS & Mathematics Student<br> Cybersecurity & Accounting Minor
+            </h3>
+
+            <p>
+                I am a Computer Technology & Information Systems and Mathematics student
+                interested in software development, cybersecurity, networking, and data analysis.
+                My experience includes robotics research through NC Sea Grant, data engineering
+                training through Code the Dream, and personal projects involving JavaScript,
+                Python, SQL, and web development.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="projects.html" class="primary-button">View Projects</a>
+                <a href="files/Master Resume.docx" class="secondary-button" download>
+                    Download Resume
+                </a>
+            </div>
         </div>
 
-        <div class="about-text">
-            <h2>About</h2>
-            <p>
-                I'm a person who loves learning, creating, and improving a little every day.
-                Whether I'm diving into math or working on personal projects, I'm always looking
-                for meaning and growth in what I do. I value hard work, curiosity, and the kind
-                of mindset that turns challenges into opportunities.
-            </p>
+        <div class="hero-image">
+            <img src="images/portrait-picture.png" alt="Miguel Alexander Nunez Palomares">
         </div>
     </section>
 
     <!-- Experience section with cards for educational background, classes taken, and leadership & programs -->
     <section id="experience">
-        <h2>Experience</h2>
+        <h2>Education, Research, and Leadership</h2>
 
-        <div class="card-container">
+        <div class="stats-container">
+            <div class="stat-card">🎓 <span>Double Major</span></div>
+            <div class="stat-card">🛡️ <span>Cybersecurity Minor</span></div>
+            <div class="stat-card">📊 <span>Accounting Minor</span></div>
+            <div class="stat-card">📅 <span>Expected Graduation: May 2027</span></div>
+        </div>
+
+        <div class="education-grid">
             <div class="card">
                 <h3>Educational Background</h3>
-                <ul>
-                    <li>B.S. in Computer Technology & Information Systems (in progress)</li>
-                    <li>B.S. in Mathematics (in progress)</li>
-                    <li>Minor in Accounting (in progress)</li>
-                    <li>Minor in Cyber Security (in progress)</li>
-                </ul>
+                <div class="education-item">
+                    <strong>Guilford College</strong>
+                    <span>Expected Graduation: May 2027</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>B.S. Computer Technology & Information Systems</strong>
+                    <span>In progress</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>B.S. Mathematics</strong>
+                    <span>In progress</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>Minor: Accounting</strong>
+                    <span>In progress</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>Minor: Cybersecurity</strong>
+                    <span>In progress</span>
+                </div>
             </div>
 
             <div class="card">
-                <h3>Classes Taken</h3>
+                <h3>Relevant Courses</h3>
                 <ul>
-                    <li>Fundamentals of Cyber Security</li>
                     <li>Operating Systems</li>
                     <li>Networking</li>
                     <li>Database Systems</li>
@@ -81,17 +133,35 @@
                     <li>Discrete Mathematics</li>
                     <li>Calculus 3</li>
                     <li>Complex Analysis</li>
-                    <li>Data Structures & Algorithms</li>
+                    <li>Fundamentals of Cyber Security</li>
+                    <li>Data Structures & Algorithms in Object-Oriented Programming</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="card">
-                <h3>Leadership & Programs</h3>
-                <ul>
-                    <li>Golden Door Scholar</li>
-                    <li>NC SeaGrant Coastal Robotics Research</li>
-                    <li>Code the Dream - Data Engineering Pathway</li>
-                </ul>
+        <h3 class="programs-heading">Leadership & Programs</h3>
+
+        <div class="programs-grid">
+            <div class="program-card">
+                <img src="images/gdss.jpg" alt="Golden Door Scholars">
+                <h3>Golden Door Scholars</h3>
+                <p>Competitive national scholarship supporting high-achieving immigrant students.</p>
+            </div>
+
+            <div class="program-card">
+                <img src="images/sea.png" alt="NC SeaGrant Coastal Robotics Research">
+                <h3>NC SeaGrant Coastal Robotics Research</h3>
+                <p>Applied AI and robotics toward environmental sustainability research.</p>
+            </div>
+
+            <div class="program-card">
+                <img src="images/ctd.jpg" alt="Code the Dream">
+                <h3>Code the Dream - Data Engineering Pathway</h3>
+                <p>
+                    Participating in a software development and data engineering training program
+                    focused on programming, web technologies, databases, APIs, and collaborative
+                    software development.
+                </p>
             </div>
         </div>
     </section>
@@ -99,86 +169,195 @@
     <!-- Skills section with cards for programming languages, technical skills, networking, and languages spoken -->
     <section id="skills">
         <h2>Skills</h2>
+
+        <p class="section-intro">
+            A quick overview of the tools, languages, and technical areas I am building experience with.
+        </p>
+
         <ul></ul>
-
-
-        <!-- Card container to hold individual skill cards 
-        <div class="card-container">
-            <div class="card">
+        <div class="skills-grid">
+            <div class="skill-card">
                 <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML (in Progress)</li>
-                    <li>CSS (in Progress)</li>
-                </ul>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
                 <h3>Technical Skills</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>YOLOv8</li>
-                    <li>OpenCV</li>
-                    <li>MySQL Workbench 8.0</li>
-                </ul>
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>YOLOv8</span>
+                    <span>OpenCV</span>
+                    <span>MySQL Workbench 8.0</span>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="skill-card">
                 <h3>Networking</h3>
-                <ul>
-                    <li>CCNA - Intro to Networks Cisco Networking Academy Badge</li>
-                    <div class="about-image">
-                        <img src="images/badge.png" alt="CCNA Badge"> 
-                    </div>
-                </ul>
+                <img src="images/badge.png" alt="CCNA Badge" width="225">
+                <p>CCNA - Intro to Networks Cisco Networking Academy Badge</p>
             </div>
 
-            <div class="card">
+            <div class="skill-card full-width">
                 <h3>Languages</h3>
-                <ul>
-                    <li>English</li>
-                    <li>Spanish</li>
-                </ul>
+                <div class="skill-tags language-tags">
+                    <span>English (Fluent)</span>
+                    <span>Spanish (Fluent)</span>
+                </div>
             </div>
         </div>
-        -->
     </section>
 
     <!-- Projects section with cards for different projects I've worked on -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Projects Preview</h2>
+
+        <div class="messageButton">
+            <p class="section-intro">
+                A quick look at selected projects I have built using web development,
+                Java, Python, databases, APIs, and computer vision.
+            </p>
+
+            <div class="projects-action">
+                <a href="projects.html" class="primary-button">View All Projects</a>
+            </div>
+        </div>
+
+        <div class="featured-projects">
+            <div class="project-card">
+                <h3>Edge-AI Campus Vehicle Monitoring System</h3>
+                <img src="images/car.png" alt="Edge-AI Vehicle Monitoring System">
+                <p>
+                    Built an Edge-AI prototype using Raspberry Pi, FastAPI, YOLOv8,
+                    OpenCV, SQLite, and REST APIs to detect, log, and display vehicle activity.
+                </p>
+                <span>Python • FastAPI • YOLOv8 • OpenCV</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Lotería Game</h3>
+                <img src="images/loteria.png" alt="Lotería Game">
+                <p>
+                    Created a JavaFX desktop version of the traditional Mexican game
+                    Lotería with custom classes, game logic, difficulty settings, and animations.
+                </p>
+                <span>Java • JavaFX • OOP • GUI Design</span>
+            </div>
+
+            <div class="project-card">
+                <h3>MAX Stucco Business Website</h3>
+                <img src="images/max.png" alt="MAX Stucco Business Website">
+                <p>
+                    Designed and deployed a responsive business website for a real stucco
+                    company, including service pages, gallery structure, and contact features.
+                </p>
+                <span>HTML • CSS • JavaScript • Render</span>
+            </div>
+        </div>
+
+        <h3 class="github-heading">GitHub Repositories</h3>
+        <div class="github-stats">
+            <div class="github-stat-card">
+                <span id="public-repos">--</span>
+                <p>Public Repositories</p>
+            </div>
+
+            <div class="github-stat-card">
+                <span id="github-followers">--</span>
+                <p>Followers</p>
+            </div>
+
+            <div class="github-stat-card">
+                <span id="github-following">--</span>
+                <p>Following</p>
+            </div>
+        </div>
         <ul></ul>
     </section>
 
     <!-- Connect section with links to LinkedIn and GitHub profiles -->
-    <section id="connect">
-        <h2>Connect</h2>
+    <section id="connect" class="contact-section">
+        <h2>Connect With Me</h2>
+        <div class="contact-info">
+            <p class="eyebrow">Get In Touch</p>
+            <p>
+                I am always open to connecting about software development, data projects,
+                cybersecurity, research opportunities, internships, and collaborative projects.
+            </p>
 
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" class="social-button">in</a>
-            <a href="https://github.com/Mnunez1001" target="_blank" class="social-button">GH</a>
+            <div class="social-links">
+                <!-- LinkedIn icon link (opens in new tab) -->
+                <a href="https://www.linkedin.com/in/alex-nunezpalomares/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76
+                                2.24 5 5 5h14c2.76 0 5-2.24
+                                5-5v-14c0-2.76-2.24-5-5-5zm-11
+                                19h-3v-10h3v10zm-1.5-11.268c-.966
+                                0-1.75-.79-1.75-1.764s.784-1.764
+                                1.75-1.764 1.75.79 1.75 1.764
+                                -.784 1.764-1.75 1.764zm13.5
+                                11.268h-3v-5.604c0-1.336-.027-3.056-1.862-3.056-1.862
+                                0-2.146 1.454-2.146 2.957v5.703h-3v-10h2.881v1.367h.041c.401-.76
+                                1.379-1.562 2.84-1.562 3.037 0 3.598 2.001 3.598
+                                4.604v5.591z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/Mnunez1001" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <!-- icon; aria-hidden so SRs use the link label -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.205 11.366.6.112.82-.261.82-.58
+                                0-.287-.011-1.244-.017-2.254-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756
+                                -1.089-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304
+                                 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.93
+                                0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.527.117-3.182 0 0 1.008-.322
+                                3.301 1.23a11.5 11.5 0 0 1 6.002 0c2.291-1.552 3.298-1.23 3.298-1.23
+                                .655 1.655.243 2.879.119 3.182.77.84 1.235 1.911 1.235 3.221
+                                0 4.61-2.807 5.624-5.479 5.921.43.371.823 1.102.823 2.222
+                                0 1.604-.014 2.896-.014 3.286 0 .321.218.694.825.577C20.565 22.267
+                                24 17.789 24 12.5 24 5.87 18.627.5 12 .5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="email-copy">
+                <span id="email-text">alexpalomares1001@gmail.com</span>
+                <button type="button" id="copy-email-button">Copy Email</button>
+            </div>
         </div>
-    </section>
 
-    <!-- Leave a Message section with a form for users to submit their name, email, and message -->
-    <section id="leave-message">
-        <h2>Leave a Message</h2>
+        <div class="contact-form-card">
+            <h3>Leave a Message</h3>
 
-        <form name="leave_message">
-            <label for="usersName">Name:</label>
-            <input type="text" id="usersName" name="usersName" required>
+            <form name="leave_message">
+                <label for="usersName">Name</label>
+                <input type="text" id="usersName" name="usersName" required>
 
-            <label for="usersEmail">Email:</label>
-            <input type="email" id="usersEmail" name="usersEmail" required>
+                <label for="usersEmail">Email</label>
+                <input type="email" id="usersEmail" name="usersEmail" required>
 
-            <label for="usersMessage">Message:</label>
-            <textarea id="usersMessage" name="usersMessage" required></textarea>
+                <label for="usersMessage">Message</label>
+                <textarea id="usersMessage" name="usersMessage" required></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Messages section to display submitted messages from the form -->
@@ -190,6 +369,43 @@
 
     <!-- Footer section for any additional information or links -->
     <footer id="footer">
+
+        <div class="footer-content">
+
+            <h3>Miguel Alexander Nunez Palomares</h3>
+
+            <p class="footer-title">
+                Computer Technology & Information Systems Student |
+                Mathematics Student |
+                Cybersecurity Minor
+            </p>
+
+            <p class="footer-email">
+                📧 alexpalomares1001@gmail.com
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://github.com/Mnunez1001" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/alex-nunezpalomares" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+            <p class="footer-message">
+                Building software, data, and cybersecurity solutions while
+                continuously learning and growing as a developer.
+            </p>
+
+            <a href="#about" class="back-to-top">
+                ↑ Back to Top
+            </a>
+
+        </div>
 
     </footer>
 
