@@ -173,8 +173,7 @@
         <p class="section-intro">
             A quick overview of the tools, languages, and technical areas I am building experience with.
         </p>
-
-        <ul></ul>
+        
         <div class="skills-grid">
             <div class="skill-card">
                 <h3>Programming Languages</h3>
@@ -343,29 +342,26 @@
         </div>
 
         <div class="contact-form-card">
-            <h3>Leave a Message</h3>
+            <h3>Send Me a Message</h3>
 
-            <form name="leave_message">
-                <label for="usersName">Name</label>
-                <input type="text" id="usersName" name="usersName" required>
+            <form action="https://formspree.io/f/mqaykvdb" method="POST" id="contactForm">
+                <label for="name">Name</label>
+                <input id="name" name="name" required>
 
-                <label for="usersEmail">Email</label>
-                <input type="email" id="usersEmail" name="usersEmail" required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
 
-                <label for="usersMessage">Message</label>
-                <textarea id="usersMessage" name="usersMessage" required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send Message</button>
+                <input type="hidden" name="_subject" value="Portfolio contact form">
+
+                <button type="submit" id="contactSubmit">Send Message</button>
+
+                <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
             </form>
         </div>
     </section>
-
-    <!-- Messages section to display submitted messages from the form -->
-    <section id="messages">
-        <h2>Messages</h2>
-        <ul></ul>
-    </section>
-
 
     <!-- Footer section for any additional information or links -->
     <footer id="footer">
@@ -408,6 +404,27 @@
         </div>
 
     </footer>
+
+    <div id="faqWidget" class="faq-widget" hidden>
+        <div class="faq-card">
+            <header class="faq-head">
+                <strong>Ask about Alex</strong>
+                <button id="faqClose" type="button" aria-label="Close">✕</button>
+            </header>
+
+            <div class="faq-body">
+                <label for="faqQ">Question</label>
+                <textarea id="faqQ" rows="3" placeholder="Example: What projects has Alex built?"></textarea>
+
+                <button id="faqSend" type="button">Ask</button>
+
+                <div id="faqStatus" class="form-status" role="status" aria-live="polite"></div>
+                <div id="faqA" class="faq-answer"></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="faqOpen" class="faq-fab" type="button" aria-label="Open Q&A">?</button>
 
     <script src="js/index.js"></script>
 </body>

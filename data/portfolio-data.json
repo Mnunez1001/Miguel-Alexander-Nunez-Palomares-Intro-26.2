@@ -1,0 +1,188 @@
+{
+    "name": "Miguel Alexander Nunez Palomares",
+    "preferredName": "Alex Nunez Palomares",
+    "education": {
+        "school": "Guilford College",
+        "expectedGraduation": "May 2027",
+        "majors": [
+            "Computer Technology & Information Systems",
+            "Mathematics"
+        ],
+        "minors": [
+            "Cybersecurity",
+            "Accounting"
+        ],
+        "gpa": 4.0,
+        "courses": [
+            "Fundamentals of Cyber Security",
+            "Operating Systems",
+            "Discrete Mathematics",
+            "Calculus III",
+            "Complex Analysis",
+            "Data Structures & Algorithms in OOP",
+            "Database Systems",
+            "Computer Networks"
+        ]
+    },
+    "skills": {
+        "programmingLanguages": [
+            "Python",
+            "Java",
+            "JavaScript"
+        ],
+        "webDevelopment": [
+            "HTML",
+            "CSS",
+            "REST APIs",
+            "Responsive Design"
+        ],
+        "tools": [
+            "Git",
+            "GitHub",
+            "MySQL Workbench",
+            "OpenCV",
+            "YOLOv8"
+        ],
+        "languages": [
+            "English",
+            "Spanish"
+        ],
+        "Networking": "CCNA, Intro to Networks (Cisco Networking Academy Badge)",
+        "Selected Leadership & Programs": [
+            "Golden Door Scholar: Awarded a prestigious scholarship for academic excellence and leadership potential.",
+            "NC SeaGrant Coastal Robotics Research: Applied AI and robotics toward environmental sustainability research.",
+            "Code the Dream: Data Engineering Path (Current): Participating in a software development and data engineering training program focused on programming, web technologies, databases, APIs, and collaborative software development."
+        ]
+    },
+    "projects": [
+        {
+            "name": "Edge-AI Campus Vehicle & Activity Monitoring System",
+            "description": "An Edge-AI monitoring system that detects, classifies, and logs campus vehicle activity using computer vision and embedded systems.",
+            "technologies": [
+                "Python",
+                "FastAPI",
+                "OpenCV",
+                "YOLOv8",
+                "Raspberry Pi",
+                "SQLite",
+                "REST APIs"
+            ],
+            "achievement": "Built an operational prototype capable of real-time vehicle detection, event storage, image capture, and backend dashboard communication."
+        },
+        {
+            "name": "MAX Stucco Business Website",
+            "description": "A responsive commercial website created for a real stucco business to improve digital presence and client acquisition.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "GitHub",
+                "Render",
+                "UI/UX Design"
+            ],
+            "liveSite": "https://max-stucco.onrender.com"
+        },
+        {
+            "name": "Lotería Game",
+            "description": "A JavaFX desktop version of the traditional Mexican game Lotería with custom classes, game logic, difficulty settings, and animations.",
+            "technologies": [
+                "Java",
+                "JavaFX",
+                "OOP",
+                "GUI Design",
+                "Event Handling"
+            ]
+        },
+        {
+            "name": "Smart Magic Mirror Project",
+            "description": "A multifunctional smart mirror built with Raspberry Pi, MagicMirror², JavaScript, Linux, and Google Assistant integration.",
+            "technologies": [
+                "MagicMirror²",
+                "JavaScript",
+                "GitHub",
+                "Linux",
+                "Raspberry Pi"
+            ]
+        },
+        {
+            "name": "NC SeaGrant Coastal Robotics Project",
+            "description": "A robotics research project focused on detecting and removing plastic waste from coastal environments using AI and computer vision.",
+            "technologies": [
+                "Python",
+                "YOLOv5",
+                "OpenCV",
+                "AI Model Training",
+                "Robotics"
+            ]
+        },
+        {
+            "name": "Personal Portfolio Website",
+            "description": "A responsive multi-page portfolio website built with HTML, CSS, and JavaScript to showcase projects, skills, APIs, and contact information.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "GitHub",
+                "Responsive Design"
+            ]
+        }
+    ],
+    "apiPage": {
+        "weatherDashboard": "Uses Open-Meteo API to retrieve current weather and 7-day forecast based on the user's location.",
+        "giphySearch": "Uses the GIPHY API to display trending GIFs and search GIFs by keyword.",
+        "githubStats": "Uses the GitHub API to display public repositories, followers, and following."
+    },
+    "contact": {
+        "email": "alexpalomares1001@gmail.com",
+        "github": "https://github.com/Mnunez1001",
+        "linkedin": "https://www.linkedin.com/in/alex-nunezpalomares"
+    },
+    "work_experience": [
+        {
+            "role": "Business Manager",
+            "company": "MAX Stucco",
+            "location": "Wichita, KS",
+            "dates": "July 2015 – Present",
+            "highlights": [
+                "Manage client communications and negotiations",
+                "Prepare estimates and invoices, reducing disputes",
+                "Coordinate procurement and scheduling for projects",
+                "Streamlined communication and workflows"
+            ]
+        },
+        {
+            "role": "Team Leader",
+            "company": "Johnson Controls",
+            "location": "Wichita, KS",
+            "dates": "May 2022 – Jan 2023",
+            "highlights": [
+                "Led 15-person team in shipping and inventory",
+                "Dispatched 2–3 truckloads daily",
+                "Bilingual team meetings (English & Spanish)"
+            ]
+        },
+        {
+            "role": "Medical Interpreter",
+            "company": "International Translation Services",
+            "location": "Wichita, KS",
+            "dates": "July 2020 – Jan 2021",
+            "highlights": [
+                "Interpreted medical information between patients and providers",
+                "Translated documents and intake forms",
+                "Ensured confidentiality and patient understanding"
+            ]
+        }
+    ],
+    "other_experience": [
+        {
+            "role": "Grocery Stock Clerk",
+            "company": "Aldi",
+            "dates": "Mar 2023 – Jul 2023"
+        },
+        {
+            "role": "Janitorial Cleaner",
+            "company": "Wilson Building Maintenance",
+            "dates": "Feb 2021 – Feb 2022"
+        }
+    ]
+}

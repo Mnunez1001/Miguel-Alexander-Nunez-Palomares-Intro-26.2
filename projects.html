@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the webpage -->
-    <title>Projects | Miguel Alexander Nunez Palomares<</title>
+    <title>Projects | Miguel Alexander Nunez Palomares</title>
 
     <!-- Meta description for the website -->
     <meta name="description"
@@ -31,7 +31,7 @@
         content="Alex Nunez Palomares portfolio showcasing projects and skills in web development, design, and more.">
     <meta property="og:image" content="images/portfolioWeb.png">
 
-    
+
 </head>
 
 <body>
@@ -331,6 +331,27 @@
         </div>
 
     </footer>
+
+    <div id="faqWidget" class="faq-widget" hidden>
+        <div class="faq-card">
+            <header class="faq-head">
+                <strong>Ask about Alex</strong>
+                <button id="faqClose" type="button" aria-label="Close">✕</button>
+            </header>
+
+            <div class="faq-body">
+                <label for="faqQ">Question</label>
+                <textarea id="faqQ" rows="3" placeholder="Example: What projects has Alex built?"></textarea>
+
+                <button id="faqSend" type="button">Ask</button>
+
+                <div id="faqStatus" class="form-status" role="status" aria-live="polite"></div>
+                <div id="faqA" class="faq-answer"></div>
+            </div>
+        </div>
+    </div>
+
+    <button id="faqOpen" class="faq-fab" type="button" aria-label="Open Q&A">?</button>
 
     <script src="js/projects.js"></script>
 </body>

@@ -453,3 +453,118 @@ footer {
     background-color: #187106;
     color: white;
 }
+
+/* ChatBot code */
+.form-status {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #187106;
+}
+
+.faq-fab {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    background-color: #187106;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    z-index: 1000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.faq-fab:hover {
+    transform: translateY(-4px);
+    background-color: #0f4d04;
+}
+
+.faq-widget {
+    position: fixed;
+    right: 28px;
+    bottom: 105px;
+    width: 360px;
+    max-width: calc(100% - 40px);
+    z-index: 1000;
+}
+
+.faq-card {
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+
+.faq-head {
+    background-color: #187106;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-head button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.faq-body {
+    padding: 20px;
+}
+
+.faq-body label {
+    color: #187106;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.faq-body textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.faq-body button {
+    background-color: #187106;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: bold;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    margin-top: 14px;
+    line-height: 1.6;
+}
+
+.dark-mode .faq-card {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+.dark-mode .faq-body textarea {
+    background-color: #111827;
+    color: #f9fafb;
+    border-color: #4b5563;
+}
+
+.dark-mode .form-status,
+.dark-mode .faq-body label {
+    color: #86efac;
+}
