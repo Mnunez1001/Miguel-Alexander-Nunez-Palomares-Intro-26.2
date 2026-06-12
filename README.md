@@ -21,6 +21,7 @@ The website highlights:
 - GitHub repositories
 - Open API demonstrations
 - Professional contact information
+- Mini ChatBot for quick answers
 
 The goal of this project is to create a centralized location where visitors can learn about my technical experience and explore projects that demonstrate my skills in software development, data engineering, cybersecurity, networking, and computer science.
 
@@ -160,20 +161,26 @@ The portfolio dynamically retrieves information from the GitHub API including:
 
 This allows the website to display live information directly from my GitHub profile.
 
----
-
 
 ---
+## AI Portfolio Assistant
 
+An AI-powered chatbot allows visitors to ask questions about:
+
+- Education
+- Skills
+- Projects
+- Experience
+- Research interests
+
+---
 ## Future Improvements
 
 Potential future enhancements include:
 
 - Project filtering system
-- Blog section
 - Resume analytics
 - Additional API integrations
-- Project search functionality
 - Animated project galleries
 - Accessibility improvements
 
